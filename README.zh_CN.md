@@ -69,7 +69,7 @@ exports.initSchedule = {
 
 ## 提问交流
 
-请到 [egg issues](https://github.com/eggjs/egg/issues) 异步交流。
+请到 [egg issues](https://github.com/claviering/egg-init-schedule/issues) 异步交流。
 
 ## License
 

@@ -49,6 +49,16 @@ exports.initSchedule = {
 ```js
 // {app_root}/config/config.default.js
 exports.initSchedule = {
+  time: 'messageTime', // 建立定时器的字段名
+  model: 'Message', // 数据库表名
+  // app 启动时候查询 mongodb 的查询参数
+  params: {
+    status: 0,
+  },
+  // 定时任务执行之后，更新 mongodb 数据的参数
+  update: {
+    status: 1,
+  },
 };
 ```
 
@@ -60,7 +70,7 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+Please open an issue [here](https://github.com/claviering/egg-init-schedule/issues).
 
 ## License
 
